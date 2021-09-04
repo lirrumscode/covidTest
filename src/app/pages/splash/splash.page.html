@@ -1,0 +1,58 @@
+<ion-content color="medium">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides [options]="slideOpts">
+          <ion-slide>
+            <img src="assets/icons/health-vaccine-row.svg" />
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/icons/health-covid-test.svg" />
+          </ion-slide>
+        </ion-slides>
+        <!--<img src="./assets/img/logo.png" class="img-logo" />-->
+        <!--<img src="./assets/img/splash.svg" class="img-content" />-->
+      </ion-col>
+      <ion-col size="12">
+        <h1 class="title">Smart Start Screening Tool</h1>
+        <ul>
+          <li class="item1">
+            <a>Toma tú temperatura en casa</a>
+          </li>
+          <li class="item2">
+            <a>Completa el Cuestionario de Diagnóstico</a>
+            <p>
+              Si el resultado es verde, puedes presentarte a trabajar, <br />Si
+              es amarillo, ve a tú trabajo y ahi completa la revisión de
+              temperatura al llegar.<br />
+              Si es rojo, quédate en casa y sigue el proceso de notificación
+              llamando a tú división
+              <br />
+              <b>Imprime tus resultados, incluyendo el código.</b>
+            </p>
+          </li>
+        </ul>
+        <div class="container-buttons">
+          <ion-button
+            color="dark"
+            (click)="test1()"
+            shape="round"
+            fill="outline"
+            mode="md"
+            class="test-one"
+            >Test 1</ion-button
+          >
+          <ion-button
+            color="dark"
+            (click)="test2()"
+            shape="round"
+            fill="outline"
+            mode="md"
+            class="test-two"
+            >Test 2</ion-button
+          >
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

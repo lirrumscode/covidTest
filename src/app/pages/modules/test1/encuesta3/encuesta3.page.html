@@ -1,0 +1,69 @@
+<ion-content color="medium">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="./assets/icons/logo2.png" class="img-logo" />
+      </ion-col>
+      <ion-col size="12">
+        <h1 class="title">
+          Hoy, al tomar tu temperatura, ¿fué de 37.5C/99.5F o más alta?<b style="color: #ff1515;">*</b>
+        </h1>
+        <ion-list>
+        <ion-radio-group value="biff" (ionChange)="radioGroupChange($event)">
+          <ion-item color="medium" lines="none">
+            <ion-label class="select-txt">Sí</ion-label>
+            <ion-radio
+              slot="start"
+              value="si"
+              color="dark"
+              mode="md"
+            ></ion-radio>
+          </ion-item>
+          <ion-item color="medium" lines="none">
+            <ion-label class="select-txt">No</ion-label>
+            <ion-radio
+              slot="start"
+              value="no"
+              mode="md"
+            ></ion-radio>
+          </ion-item>
+          <ion-item color="medium" lines="none">
+            <ion-label class="select-txt">No tengo termometro</ion-label>
+            <ion-radio
+              slot="start"
+              value="termometro"
+              mode="md"
+            ></ion-radio>
+          </ion-item>
+          </ion-radio-group>
+          </ion-list>
+        <ion-row class="row">
+          <ion-col size="6">
+            <ion-button
+              color="dark"
+              shape="round"
+              fill="outline"
+              mode="md"
+              class="btn-signup"
+              (click)="goBack()"
+            >
+              <span class="span">Anterior</span>
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button
+              color="dark"
+              shape="round"
+              fill="outline"
+              mode="md"
+              class="btn-signup"
+              (click)="goNext()"
+            >
+              <span class="span">Siguiente</span>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

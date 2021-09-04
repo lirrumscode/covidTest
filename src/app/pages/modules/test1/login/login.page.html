@@ -1,0 +1,58 @@
+<ion-content color="medium" class="content">
+  <ion-row>
+    <ion-col size="12">
+      <img src="./assets/icons/logo2.png" class="img-logo" />
+    </ion-col>
+    <ion-col size="12">
+      <form>
+        <ion-item class="item" color="medium" lines="none">
+          <ion-label position="floating">Ingresa tú Nombre</ion-label>
+          <ion-input
+            type="text"
+            name="nombre"
+            id="nombre"
+            [(ngModel)]="form.nombre"
+            required
+            color="dark"
+          ></ion-input>
+        </ion-item>
+        <ion-item class="item" color="medium" lines="none">
+          <ion-label position="floating">Ingresa tú Apellido</ion-label>
+          <ion-input
+            type="text"
+            name="apellido"
+            id="apellido"
+            [(ngModel)]="form.apellido"
+            required
+            color="dark"
+          ></ion-input>
+        </ion-item>
+        <ion-item class="item" color="medium" lines="none">
+          <ion-label position="floating"
+            >Ingresa tú Número de celular</ion-label
+          >
+          <ion-input
+            type="number"
+            name="celular"
+            id="celular"
+            [(ngModel)]="form.celular"
+            required
+            color="dark"
+          ></ion-input>
+        </ion-item>
+        <ion-col size="12">
+          <ion-button
+            color="dark"
+            shape="round"
+            fill="outline"
+            class="btn-signup"
+            mode="md"
+            (click)="next(form)"
+          >
+            Siguiente
+          </ion-button>
+        </ion-col>
+      </form>
+    </ion-col>
+  </ion-row>
+</ion-content>

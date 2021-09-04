@@ -1,0 +1,64 @@
+/* **** VARIABLES GLOBALES **** */
+$font: "Poppins";
+ion-content {
+  height: 100vh;
+}
+ion-list{
+    background: none !important;
+}
+ion-grid {
+  ion-row {
+    ion-col {
+      .img-logo {
+        margin: auto;
+        display: block;
+        width: 60%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      .title {
+        font-family: $font;
+        color: #424874;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+      }
+      ion-label {
+        font-family: $font;
+        color: #424874;
+        font-weight: bold;
+      }
+      ion-radio{
+        --color-checked:#424874; 
+      }
+      .row {
+          position: fixed;
+          bottom: 10px;
+          width: 100%;
+        ion-button {
+          width: 50%;
+          height: 50px;
+          margin: auto;
+          display: block;
+          margin-top: 10%;
+          font-family: $font;
+          font-weight: bold;
+          --background:#424874;
+          --background-activated:#424874;
+          --color:#F4EEFF;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ion-grid {
+    ion-row {
+      ion-col {
+        .img-logo {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

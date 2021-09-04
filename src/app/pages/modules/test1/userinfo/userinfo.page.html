@@ -1,0 +1,59 @@
+<ion-content color="medium">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="./assets/icons/logo2.png" class="img-logo" />
+      </ion-col>
+      <ion-col size="12">
+        <h1 class="title">
+          Por favor seleccione un País<b style="color: #a6b1e1"> *</b>
+        </h1>
+        <ion-label class="label"></ion-label>
+        <ion-item lines="none" color="medium">
+          <ion-label class="select-txt">Escoja..</ion-label>
+          <ion-select
+            placeholder="Select One"
+            (ionChange)="selectGroupChange($event)"
+            mode="md"
+          >
+            <ion-select-option value="mex">Mexico</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <h1 class="title">
+          Por favor selecciona la ubicación a la que deseas ingresar<b
+            style="color: #a6b1e1"
+          >
+            *</b
+          >
+        </h1>
+        <ion-label class="label"></ion-label>
+        <ion-item lines="none" color="medium">
+          <ion-label class="select-txt">Escoja..</ion-label>
+          <ion-select
+            placeholder="Select One"
+            (ionChange)="selectGroupCityChange($event)"
+            mode="md"
+          >
+            <ion-select-option value="pue">Puebla</ion-select-option>
+            <ion-select-option value="cdmx">Ciudad de mexico</ion-select-option>
+            <ion-select-option value="aca">Acapulco</ion-select-option>
+            <ion-select-option value="can">Cancún</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-row class="row">
+          <ion-col>
+            <ion-button
+              color="dark"
+              shape="round"
+              fill="outline"
+              mode="md"
+              (click)="goLogin()"
+              >Continuar</ion-button
+            >
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-content color="medium">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="./assets/icons/logo2.png" class="img-logo" />
+      </ion-col>
+      <ion-col size="12">
+        <h1 class="title">
+          Do you have any of the following possible emergency symptoms? Check
+          all the apply.<b style="color: #ff1515">*</b>
+        </h1>
+        <ion-label class="label"></ion-label>
+        <ion-list>
+          <ion-radio-group value="biff" (ionChange)="radioGroupChange($event)">
+            <ion-item color="medium" lines="none">
+              <ion-label class="select-txt"
+                >Strugglingto breathe or figthing for breath even while inactive
+                or when resting</ion-label
+              >
+              <ion-radio slot="start" value="mal" color="dark"></ion-radio>
+            </ion-item>
+            <ion-item color="medium" lines="none">
+              <ion-label class="select-txt"
+                >Feeling about to collapse every time you stand or sit up
+                (floppiness or a lack of response in a child under age
+                2)</ion-label
+              >
+              <ion-radio color="dark" slot="start" value="remal" mode="md"></ion-radio>
+            </ion-item>
+            <ion-item color="medium" lines="none">
+              <ion-label class="select-txt">None of the above</ion-label>
+              <ion-radio color="dark" slot="start" value="ninguno" mode="md"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+
+        <ion-row class="row">
+          <ion-col size="6"> </ion-col>
+          <ion-col size="6">
+            <ion-button
+              color="dark"
+              shape="round"
+              fill="outline"
+              mode="md"
+              class="btn-signup"
+              (click)="goNext()"
+            >
+              Next
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

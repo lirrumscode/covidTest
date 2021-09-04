@@ -1,0 +1,51 @@
+<ion-content color="dark">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="./assets/icons/logo.png" class="img-logo" />
+      </ion-col>
+      <ion-col size="12">
+        <p class="txt">
+          Debido al reciente brote de COVID-19,las medidas de precaucion de
+          salud y seguridad requieren que responda preguntas de evaluación
+          diariamente para evaluar si estás apto para ingresar a un sitio antes
+          de llegar.
+          <br />
+          <br />
+          Cualquier falsificación de información de manera intencional durante
+          el proceso de evaluacion, puede dar lugar a medidas disciplinarias.
+          <br />
+          Por favor selecciona: <b>"Estoy de acuerdo".</b>
+          <br />
+          Sino estas de acuerdo, no se te permitira el acceso al sitio lear.
+          <br />
+          <br />
+          Haz click <a class="link">aquí</a> si deseas conocer el aviso de
+          privacidad.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <div class="ion-items-center">
+    <ion-button
+      color="medium"
+      shape="round"
+      fill="outline"
+      mode="md"
+      class="test-one"
+      (click)="goUsertype()"
+      >De acuerdo</ion-button
+    >
+    <ion-button
+      color="medium"
+      shape="round"
+      fill="outline"
+      mode="md"
+      class="test-two"
+      (click)="goDesacuerdo()"
+      >En desacuerdo</ion-button
+    >
+  </div>
+</ion-footer>

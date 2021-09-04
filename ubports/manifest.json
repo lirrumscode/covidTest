@@ -1,0 +1,15 @@
+{
+    "name": "test.lina",
+    "description": "test 2",
+    "architecture": "@CLICK_ARCH@",
+    "title": "test",
+    "hooks": {
+        "test": {
+            "apparmor": "test.apparmor",
+            "desktop":  "test.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "castro <linacastrodev@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

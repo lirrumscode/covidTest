@@ -1,0 +1,129 @@
+/* === VAR ==== */
+$color_white: #fff;
+$color_red: #3d3f51;
+$color_secondary: #acad8e;
+$fuente: "Poppins";
+/* === END VAR === */
+.content {
+  height: 100vh;
+  width: 100%;
+}
+ion-row {
+}
+form {
+  padding: 3%;
+  .title-login {
+    color: #424874;
+    font-family: $fuente;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10%;
+  }
+  .subtitle {
+    padding-top: 5%;
+    text-align: center;
+    font-family: $fuente;
+    font-size: 13px;
+  }
+  .item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: none;
+    --border-color: transparent;
+    border-radius: 15px;
+  }
+  ion-label {
+    font-family: $fuente;
+    font-weight: bold;
+    color: #424874;
+  }
+
+  .btn-signup {
+    display: block;
+    margin: 12% auto;
+    width: 60%;
+    font-weight: bold;
+    height: 50px;
+    --background:#424874;
+    --background-activated:#424874;
+    --color:#424874;
+  }
+}
+.img-logo {
+    margin: auto;
+    display: block;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+/* ==== START MEDIAQUERYS FOR CELLPHONE ==== */
+@media only screen and (min-width: 365px) and (max-width: 812px) {
+  .img-logo {
+    margin: auto;
+    display: block;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+  .content {
+    height: 100vh;
+    width: 100%;
+  }
+  ion-row {
+    form {
+      padding: 3%;
+
+      .title-login {
+        color: #424874;
+        font-family: $fuente;
+        text-align: center;
+        font-weight: bold;
+        font-size: 33px;
+        padding-top: 10%;
+      }
+      .subtitle {
+        padding-top: 0%;
+      }
+      .item {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+        box-shadow: none;
+        border-radius: 15px;
+      }
+      ion-label {
+        font-family: $fuente;
+        color: #424874;
+      }
+      span {
+        font-family: $fuente !important;
+        color: #424874;
+        font-size: 12px;
+        float: left;
+        padding-left: 20px;
+      }
+      .btn-signup {
+        display: block;
+        margin: 12% auto;
+        width: 60%;
+        height: 50px;
+        --background:#F4EEFF;
+        --background-activated:#424874;
+        --color:#424874;
+      }
+    }
+  }
+
+  ion-input {
+    --color: #424874;
+  }
+}
+
+/* ==== END MEDIAQUERYS FOR CELLPHONE ==== */

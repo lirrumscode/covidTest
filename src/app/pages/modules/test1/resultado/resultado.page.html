@@ -1,0 +1,22 @@
+<ion-content color="dark">
+  <img src="./assets/icons/logo.png" class="img-logo" />
+  <ion-grid>
+    <ion-row [ngStyle]="{'background': color }">
+      <ion-col size="12">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h1 class="title">{{ descripcion }}</h1>
+            <p class="txt">
+              {{ text }}
+            </p>
+            <h3 class="subtitle">Fecha de ingreso:</h3>
+            <p class="txt">{{ fecha }}</p>
+            <h3 class="subtitle">Nombre:</h3>
+            <p class="txt">{{ user?.nombre+' '+user?.apellido }}</p>
+            <h3 class="subtitle">Código de acceso:</h3>
+            <p class="txt">{{codigo}}</p>
+            <img [src]="img" class="img-logo" />
+            <ion-button color="dark" [routerLink]="['/splash']" fill="outline" shape="round" class="btn-close" mode="md">Close</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

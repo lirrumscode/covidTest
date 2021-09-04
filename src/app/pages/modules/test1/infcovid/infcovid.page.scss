@@ -1,0 +1,127 @@
+/* **** VARIABLES GLOBALES **** */
+$font: "Poppins";
+ion-content {
+  height: 100vh;
+}
+ion-grid {
+  ion-row {
+    padding-right: 5px;
+    padding-left: 5px;
+    ion-col {
+      .img-logo {
+        margin: auto;
+        display: block;
+        width: 60%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+      }
+      .txt {
+        font-family: $font;
+        color: #fff;
+        text-align: justify;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .link {
+          color: #a6b1e1;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+ion-footer {
+  width: 100%;
+  background: #424874;
+  .ion-items-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    ion-button {
+      width: 70%;
+      height: 50px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-family: $font;
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ion-grid {
+    ion-row {
+      ion-col {
+        .img-logo {
+          width: 40%;
+        }
+        .txt {
+          font-family: $font;
+          color: #000;
+          text-align: justify;
+          font-size: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .row {
+          ion-button {
+            width: 70%;
+            height: 50px;
+          }
+        }
+        .img-content {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 2056px) {
+  ion-grid {
+    ion-row {
+      ion-col {
+        .row {
+          ion-button {
+            width: 80%;
+            height: 50px;
+          }
+        }
+        .img-logo {
+          width: 30%;
+          margin-top: 5%;
+          margin-bottom: 5%;
+        }
+        .img-content {
+          width: 60%;
+        }
+        ul {
+          .item1 {
+            color: #ff1515;
+            font-size: 20px;
+            a {
+              font-family: $font;
+              color: #000;
+              font-size: 20px;
+            }
+          }
+          .item2 {
+            color: #ff1515;
+            font-size: 20px;
+            a {
+              font-family: $font;
+              color: #ff1515;
+              font-size: 20px;
+            }
+            p {
+              color: #000 !important;
+              font-family: $font !important;
+              font-size: 20px;
+              padding-right: 20px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}

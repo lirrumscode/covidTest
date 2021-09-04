@@ -1,0 +1,72 @@
+<ion-content color="medium">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="./assets/icons/logo2.png" class="img-logo" />
+      </ion-col>
+      <ion-col size="12">
+        <h1 class="title">
+          En las últimas 48 horas, ¿ha tenido alguno de los siguientes NUEVOS síntomas?
+           Marque todo lo que corresponda.<b style="color: #ff1515;">*</b>
+        </h1>
+        <ion-list>
+          <ion-item
+            *ngFor="let answer of array; let i = index"
+            color="medium"
+            lines="none"
+          >
+            <ion-label>{{answer.name}}</ion-label>
+            <ion-checkbox
+              color="dark"
+              [disabled]="valid"
+              [(ngModel)]="answer.isChecked"
+              (ionChange)="checkEvent()"
+              mode="md"
+            ></ion-checkbox>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item
+            color="medium"
+            lines="none"
+          >
+            <ion-label>Ninguna de las anteriores</ion-label>
+            <ion-checkbox
+              color="dark"
+              [disabled]="validar"
+              [(ngModel)]="none"
+              (ionChange)="select($event)"
+              mode="md"
+            ></ion-checkbox>
+          </ion-item>
+        </ion-list>
+        <ion-row class="row">
+          <ion-col size="6">
+            <ion-button
+              color="dark"
+              shape="round"
+              fill="outline"
+              mode="md"
+              class="btn-signup"
+              (click)="goBack()"
+            >
+              <span class="span">Anterior</span>
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button
+              color="dark"
+              shape="round"
+              fill="outline"
+              mode="md"
+              class="btn-signup"
+              (click)="goNext()"
+            >
+              <span class="span">Siguiente</span>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
