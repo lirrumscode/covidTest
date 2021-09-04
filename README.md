@@ -4,11 +4,9 @@ _This little project is about a serie of projects for a **Independent Project** 
 > **Frontend web developer,** and it's inspire in the project:
 <br>
 <img src="https://i.ibb.co/dJPmPy6/photo-2021-09-04-16-17-30.jpg" alt="img">
-<br>
 <img src="https://i.ibb.co/FVL3vDt/photo-2021-09-04-16-18-29.jpg" alt="img">
 <br>
 <img src="https://i.ibb.co/0KpnMpR/photo-2021-09-04-16-19-09.jpg" alt="img">
-<br>
 <img src="https://i.ibb.co/WHzF0NK/photo-2021-09-04-16-22-21.jpg" alt="img">
 <br>
 <img src="https://i.ibb.co/JnYJdqQ/photo-2021-09-04-16-23-22.jpg" alt="img">
